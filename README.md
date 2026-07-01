@@ -42,24 +42,26 @@ Approximately 10 samples per class
 3) Improved classification accuracy
 
 ## Results
-#### 1. Original UAV Image
 
-<img width="356" height="297" alt="image" src="https://github.com/user-attachments/assets/c2a3917a-d207-4c1f-8978-58da3f93581a" />
-
-#### 2. NDVI Map
+#### 1. NDVI Map
 <img width="487" height="398" alt="image" src="https://github.com/user-attachments/assets/6c8071c8-4c9b-4507-ad29-7c3eb21b4b7a" />
 
-#### 3. Training Samples
+#### 2. Training Samples
 <img width="506" height="370" alt="image" src="https://github.com/user-attachments/assets/50bdfcf1-7993-4291-a8c0-7674fa887bb0" />
+
 <img width="695" height="298" alt="image" src="https://github.com/user-attachments/assets/90806905-207a-439a-90e7-5ae89ccb18fd" />
+
 <img width="474" height="341" alt="image" src="https://github.com/user-attachments/assets/677a7599-1039-4118-8a6b-c4ebcd738b03" />
+
 <img width="513" height="390" alt="image" src="https://github.com/user-attachments/assets/20f5ceb2-b2c2-463a-9f87-531948b31d9c" />
+
 <img width="432" height="555" alt="image" src="https://github.com/user-attachments/assets/97e29dab-d589-4be0-9258-520eb80f6aee" />
 
-#### 4. Raw Classification Output
+
+#### 3. Raw Classification Output
 <img width="653" height="508" alt="image" src="https://github.com/user-attachments/assets/7c6d8b47-bec5-4ba3-988d-19169ac98d8e" />
 
-#### 5. Final Corrected Classification Map
+#### 4. Final Corrected Classification Map
 <img width="679" height="590" alt="image" src="https://github.com/user-attachments/assets/b10308ec-ad1f-412a-809f-ff162590e0b2" />
 
 ## Key Findings
