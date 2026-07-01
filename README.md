@@ -1,7 +1,7 @@
 # UAV Land Cover Classification using SVM (ArcGIS Pro)
 Supervised object-based land cover classification using drone multispectral imagery and Support Vector Machine (SVM) in ArcGIS Pro.
 
-<img width="679" height="590" alt="image" src="https://github.com/user-attachments/assets/b10308ec-ad1f-412a-809f-ff162590e0b2" />
+<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/b10308ec-ad1f-412a-809f-ff162590e0b2" />
 
 ## Project Overview
 This project performs land cover classification using UAV multispectral imagery in ArcGIS Pro.
@@ -44,25 +44,25 @@ Approximately 10 samples per class
 ## Results
 
 #### 1. NDVI Map
-<img width="487" height="398" alt="image" src="https://github.com/user-attachments/assets/6c8071c8-4c9b-4507-ad29-7c3eb21b4b7a" />
+<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/8a38b009-7ab0-4b80-9072-7fe960e90b18" />
+
 
 #### 2. Training Samples
-<img width="506" height="370" alt="image" src="https://github.com/user-attachments/assets/50bdfcf1-7993-4291-a8c0-7674fa887bb0" />
+<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/1a4875d6-e4d2-444d-a114-e83f8608bfeb" />
+<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/c4ac8af4-83a9-4b6a-a835-3465843505b0" />
+<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/2f491fa2-a914-491f-b8f6-a213a577bc98" />
+<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/6e4f980e-f5b6-4cbb-b380-8491d207bdb9" />
+<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/460c20bd-4bcf-4751-a47d-89aae0c16d6f" />
 
-<img width="695" height="298" alt="image" src="https://github.com/user-attachments/assets/90806905-207a-439a-90e7-5ae89ccb18fd" />
-
-<img width="474" height="341" alt="image" src="https://github.com/user-attachments/assets/677a7599-1039-4118-8a6b-c4ebcd738b03" />
-
-<img width="513" height="390" alt="image" src="https://github.com/user-attachments/assets/20f5ceb2-b2c2-463a-9f87-531948b31d9c" />
-
-<img width="432" height="555" alt="image" src="https://github.com/user-attachments/assets/97e29dab-d589-4be0-9258-520eb80f6aee" />
 
 
 #### 3. Raw Classification Output
-<img width="653" height="508" alt="image" src="https://github.com/user-attachments/assets/7c6d8b47-bec5-4ba3-988d-19169ac98d8e" />
+<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/a2d80aa0-09be-41cf-b7c9-6c84124f0dc0" />
+
 
 #### 4. Final Corrected Classification Map
-<img width="679" height="590" alt="image" src="https://github.com/user-attachments/assets/b10308ec-ad1f-412a-809f-ff162590e0b2" />
+<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/ebdcc005-86fc-4c7e-9389-98251b9ebc13" />
+
 
 ## Key Findings
 1) SVM achieved good separation between vegetation, built-up areas, and water bodies.
