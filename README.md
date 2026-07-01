@@ -18,7 +18,7 @@ The workflow uses object-based image analysis (OBIA) and a supervised Support Ve
 1) UAV multispectral imagery (5 bands)
 2) Training samples created manually
 3) NDVI derived from multispectral bands
-Data used in this project was provided for educational purposes as part of GISC412 coursework of University of Canterbury.
+Data used in this project was provided for educational purposes as part of GISC401 coursework of University of Canterbury.
 
 ## Methodology
 #### 1. Data Preparation
