@@ -1,9 +1,8 @@
-[README.md](https://github.com/user-attachments/files/30681707/README.md)
 # UAV Land-Cover Classification with Object-Based SVM
 
 Object-based supervised classification of five-band UAV multispectral imagery over Cass Field, New Zealand, into five land-cover classes: **built-up areas, grassland, forest, roads, and water**.
 
-![Final land-cover map](images/final_land_cover_map.png)
+![Final land-cover map](final_land_cover_map.png)
 
 ## Overview
 
@@ -19,7 +18,7 @@ To improve spatial consistency, the image was first segmented into meaningful ob
 4. Trained an object-based SVM classifier.
 5. Reviewed the output and corrected clear spectral-confusion errors with raster-based rules.
 
-![Pixel-based and object-based comparison](images/pixel_vs_object_classification.png)
+![Pixel-based and object-based comparison](pixel_vs_object_classification.png)
 
 The object-based result forms more continuous land-cover patches, while the pixel-based output is more fragmented and sensitive to small spectral variations.
 
@@ -35,7 +34,7 @@ The main classification errors were caused by similar spectral responses:
 
 Targeted post-classification refinement reduced these obvious errors and produced a cleaner final map.
 
-![Raw and refined classification](images/raw_vs_refined_classification.png)
+![Raw and refined classification](raw_vs_refined_classification.png)
 
 ## Limitations
 
