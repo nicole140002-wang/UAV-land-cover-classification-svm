@@ -1,85 +1,54 @@
-# UAV Land Cover Classification using SVM (ArcGIS Pro)
-Supervised object-based land cover classification using drone multispectral imagery and Support Vector Machine (SVM) in ArcGIS Pro.
+[README.md](https://github.com/user-attachments/files/30681707/README.md)
+# UAV Land-Cover Classification with Object-Based SVM
 
-<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/b10308ec-ad1f-412a-809f-ff162590e0b2" />
+Object-based supervised classification of five-band UAV multispectral imagery over Cass Field, New Zealand, into five land-cover classes: **built-up areas, grassland, forest, roads, and water**.
 
-## Project Overview
-This project performs land cover classification using UAV multispectral imagery in ArcGIS Pro.
-The goal is to classify the study area into five land cover types:
-1) Buildings
-2) Grassland
-3) Forest
-4) Roads
-5) Water bodies
+![Final land-cover map](images/final_land_cover_map.png)
 
-The workflow uses object-based image analysis (OBIA) and a supervised Support Vector Machine (SVM) classifier, followed by post-processing refinement.
+## Overview
 
-## Study Data
-1) UAV multispectral imagery (5 bands)
-2) Training samples created manually
-3) NDVI derived from multispectral bands
-Data used in this project was provided for educational purposes as part of GISC401 coursework of University of Canterbury.
+The imagery has very high spatial resolution, so individual pixels contain substantial local variation from vegetation texture, shadows, bare ground, and building materials. A purely pixel-based classifier therefore produced fragmented results and visible salt-and-pepper noise.
 
-## Methodology
-#### 1. Data Preparation
-1) Loaded UAV multispectral imagery in ArcGIS Pro
-2) Generated NDVI from multispectral bands
-3) Inspected spectral characteristics of land cover types
+To improve spatial consistency, the image was first segmented into meaningful objects and then classified with a Support Vector Machine (SVM) in ArcGIS Pro. SVM was selected because it can work effectively with limited training samples and multi-band input data.
 
-### 2. Training Samples
-Created training samples for 5 classes: Buildings/Grass/Forest/Roads/Water
-Approximately 10 samples per class
+## Method
 
-### 3. Object-Based Classification
-1) Applied image segmentation (OBIA)
-2) Extracted object features from 5 spectral bands
-3) Used Support Vector Machine (SVM) classifier
-4) Model trained automatically in ArcGIS Pro using training samples
+1. Used all five spectral bands without dimensionality reduction.
+2. Segmented the UAV image into spatially coherent objects.
+3. Manually labelled representative samples for each land-cover class.
+4. Trained an object-based SVM classifier.
+5. Reviewed the output and corrected clear spectral-confusion errors with raster-based rules.
 
-### 4. Post-processing
-1) Identified misclassified objects (e.g., shadows, road edges, vegetation overlap)
-2) Applied raster calculator for correction
-3) Improved classification accuracy
+![Pixel-based and object-based comparison](images/pixel_vs_object_classification.png)
 
-## Results
+The object-based result forms more continuous land-cover patches, while the pixel-based output is more fragmented and sensitive to small spectral variations.
 
-#### 1. NDVI Map
-<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/8a38b009-7ab0-4b80-9072-7fe960e90b18" />
+## Key Results
 
+The final map clearly separates the dominant forest and grassland areas while preserving smaller features such as buildings, roads, and water.
 
-#### 2. Training Samples
-<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/1a4875d6-e4d2-444d-a114-e83f8608bfeb" />
-<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/c4ac8af4-83a9-4b6a-a835-3465843505b0" />
-<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/2f491fa2-a914-491f-b8f6-a213a577bc98" />
-<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/6e4f980e-f5b6-4cbb-b380-8491d207bdb9" />
-<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/460c20bd-4bcf-4751-a47d-89aae0c16d6f" />
+The main classification errors were caused by similar spectral responses:
 
+- bright building surfaces were sometimes confused with grassland;
+- bare ground was sometimes classified as road;
+- building shadows were sometimes classified as water.
 
+Targeted post-classification refinement reduced these obvious errors and produced a cleaner final map.
 
-#### 3. Raw Classification Output
-<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/a2d80aa0-09be-41cf-b7c9-6c84124f0dc0" />
-
-
-#### 4. Final Corrected Classification Map
-<img width="342" height="291" alt="image" src="https://github.com/user-attachments/assets/ebdcc005-86fc-4c7e-9389-98251b9ebc13" />
-
-
-## Key Findings
-1) SVM achieved good separation between vegetation, built-up areas, and water bodies.
-2) Misclassification mainly occurred in: Shadows vs water bodies / Road edges vs bare soil / High-reflectance building surfaces vs grass
-3) Post-processing significantly improved visual classification quality.
+![Raw and refined classification](images/raw_vs_refined_classification.png)
 
 ## Limitations
-1) Limited number of training samples per class
-2) Spectral similarity between roads and bare soil caused errors
-3) UAV image resolution leads to shadow-related misclassification
 
-## Skills Demonstrated
-1) Remote Sensing Image Classification
-2) Object-Based Image Analysis (OBIA)
-3) Supervised Machine Learning (SVM)
-4) ArcGIS Pro Workflow
-5) Raster Post-processing
-6) NDVI Analysis
-7) Cartographic Visualization
+Independent ground-truth data were not available, so a formal external accuracy assessment is not reported. The final map should therefore be interpreted as a supervised-classification workflow and spatial interpretation exercise rather than a production-ready land-cover dataset.
+
+The refinement stage also included analyst review, meaning that some corrections depend on visual interpretation and local knowledge of the study area.
+
+## Tools and Methods
+
+**ArcGIS Pro · Object-Based Image Analysis · Support Vector Machine · UAV Multispectral Imagery · Image Segmentation · Raster Calculator**
+
+## Project Context
+
+This work was completed as part of a University of Canterbury group coursework project. My contribution focused on preparing training samples, running the object-based SVM classification, reviewing classification errors, refining the raster output, and producing the final land-cover map.
+
 
