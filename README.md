@@ -34,7 +34,6 @@ The main classification errors were caused by similar spectral responses:
 
 Targeted post-classification refinement reduced these obvious errors and produced a cleaner final map.
 
-![Raw and refined classification](raw_vs_refined_classification.png)
 
 ## Limitations
 
