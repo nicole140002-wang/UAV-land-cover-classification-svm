@@ -2,7 +2,7 @@
 
 Object-based supervised classification of five-band UAV multispectral imagery over Cass Field, New Zealand, into five land-cover classes: **built-up areas, grassland, forest, roads, and water**.
 
-![Final land-cover map](final_land_cover_map.png)
+<img width="590" height="566" alt="image" src="https://github.com/user-attachments/assets/76e605a1-fc90-48c9-8ff1-5b7369bdba2e" />
 
 ## Overview
 
