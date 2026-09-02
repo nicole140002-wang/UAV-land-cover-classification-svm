@@ -10,6 +10,12 @@ The imagery has very high spatial resolution, so individual pixels contain subst
 
 To improve spatial consistency, the image was first segmented into meaningful objects and then classified with a Support Vector Machine (SVM) in ArcGIS Pro. SVM was selected because it can work effectively with limited training samples and multi-band input data.
 
+## Study Area and Imagery
+
+The study focused on Cass Field in Canterbury, New Zealand. The input was five-band multispectral imagery collected by a DJI UAV at approximately 0.05 m spatial resolution. The very high resolution captured detailed vegetation texture, buildings, roads, shadows and bare ground, but also increased within-class spectral variation and pixel-level noise.
+
+The classification mapped five land-cover classes: built-up areas, grassland, forest, roads and water.
+
 ## Method
 
 1. Used all five spectral bands without dimensionality reduction.
@@ -34,6 +40,24 @@ The main classification errors were caused by similar spectral responses:
 
 Targeted post-classification refinement reduced these obvious errors and produced a cleaner final map.
 
+## Workflow
+
+- Reviewed the five-band UAV multispectral imagery and defined the target land-cover classes.
+
+- Manually created representative training samples for built-up areas, grassland, forest, roads and water.
+
+- Produced a pixel-based supervised classification as a baseline.
+
+- Segmented the imagery into spatially coherent objects.
+
+- Trained an object-based Support Vector Machine classifier using all five spectral bands.
+
+- Compared the spatial coherence of the pixel-based and object-based outputs.
+
+- Reviewed spectral-confusion errors and applied raster-based post-classification refinement.
+
+- Produced the final land-cover map and documented limitations.
+
 
 ## Limitations
 
@@ -47,6 +71,6 @@ The refinement stage also included analyst review, meaning that some corrections
 
 ## Project Context
 
-This work was completed as part of a University of Canterbury group coursework project. My contribution focused on preparing training samples, running the object-based SVM classification, reviewing classification errors, refining the raster output, and producing the final land-cover map.
+I prepared the training samples, performed the object-based SVM classification in ArcGIS Pro, reviewed spectral-confusion errors, refined the classified raster and produced the final land-cover map. The broader theoretical review and coursework report were completed collaboratively as part of a University of Canterbury group project.
 
 
