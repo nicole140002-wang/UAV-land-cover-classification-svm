@@ -75,10 +75,6 @@ Targeted post-classification refinement reduced these obvious errors and produce
 
 **Object-based image analysis (OBIA) · SVM supervised classification · image segmentation · post-classification refinement · ArcGIS Pro raster workflows.**
 
-## Reproducibility
-
-Performed in ArcGIS Pro using: **Segment Mean Shift → Train SVM Classifier → Classify → Raster Calculator** for post-classification refinement. *(If your tool names differ, adjust this line to match what you actually used.)*
-
 ## Limitations
 
 Independent ground-truth data were not available, so a formal external accuracy assessment is not reported. The final map should therefore be interpreted as a supervised-classification workflow and spatial interpretation exercise rather than a production-ready land-cover dataset.
