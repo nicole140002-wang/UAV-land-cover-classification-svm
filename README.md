@@ -28,10 +28,6 @@ The imagery has very high spatial resolution, so individual pixels contain subst
 
 To improve spatial consistency, the image was first segmented into spatially coherent objects and then classified with a Support Vector Machine (SVM) in ArcGIS Pro. SVM was selected because it can work effectively with limited training samples and multi-band input data.
 
-![Pixel-based vs object-based comparison](images/pixel-vs-object-classification.png)
-
-*Figure 2. The object-based result forms more continuous land-cover patches, while the pixel-based output is more fragmented.*
-
 Steps:
 
 1. Used all five spectral bands without dimensionality reduction.
@@ -44,7 +40,7 @@ Steps:
 
 ![Final land-cover map](images/final-land-cover-map.png)
 
-*Figure 3. Final land-cover map of Cass Field showing built-up areas, grassland, forest, roads and water.*
+*Figure 2. Final land-cover map of Cass Field showing built-up areas, grassland, forest, roads and water.*
 
 The final map clearly separates the dominant forest and grassland areas while preserving smaller features such as buildings, roads and water.
 
@@ -58,7 +54,7 @@ Targeted post-classification refinement reduced these obvious errors and produce
 
 ![Raw vs refined classification](images/raw-vs-refined-classification.png)
 
-*Figure 4. Raw classification (left) compared with the refined result (right) after post-classification correction.*
+*Figure 3. Raw classification (left) compared with the refined result (right) after post-classification correction.*
 
 ## Workflow
 
