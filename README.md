@@ -38,9 +38,13 @@ Steps:
 
 ## Final Land-Cover Map
 
-![Final land-cover map](images/final-land-cover-map.png)
+<p align="center">
+  <img width="750" alt="Final land-cover map" src="images/final-land-cover-map.png" />
+</p>
 
-*Figure 2. Final land-cover map of Cass Field showing built-up areas, grassland, forest, roads and water.*
+<p align="center">
+  <em>Figure 2. Final land-cover map of Cass Field showing built-up areas, grassland, forest, roads and water.</em>
+</p>
 
 The final map clearly separates the dominant forest and grassland areas while preserving smaller features such as buildings, roads and water.
 
