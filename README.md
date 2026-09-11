@@ -38,11 +38,11 @@ Steps:
 
 ## Final Land-Cover Map
 
-<p align="center">
+<p align="left">
   <img width="750" alt="Final land-cover map" src="images/final-land-cover-map.png" />
 </p>
 
-<p align="center">
+<p align="left">
   <em>Figure 2. Final land-cover map of Cass Field showing built-up areas, grassland, forest, roads and water.</em>
 </p>
 
